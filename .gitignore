@@ -1,7 +1,10 @@
 # Ignore files and directories that should not be tracked by Git
 .vscode
 
-out
+/out
+
+/vendor
+
 
 
 
