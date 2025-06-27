@@ -21,6 +21,7 @@ lite_component("app") {
         # "wuliandk/code04:code04demo",
         # "wuliandk/code05:code05demo",
         # "wuliandk/code06:code06demo",
-        "wuliandk/wifienv:wifiappdemo",
+        # "wuliandk/wifienv:wifiappdemo",
+        "hm_package_storage_system/main:hm_package_storage_system",
     ]
 }

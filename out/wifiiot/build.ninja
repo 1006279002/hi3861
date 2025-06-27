@@ -32,6 +32,7 @@ build hal_token_static: phony ./libs/libhal_token_static.a
 build hilog_lite: phony ./libs/libhilog_lite.a
 build hilog_lite_ndk: phony obj/base/hiviewdfx/frameworks/hilog_lite/mini/hilog_lite_ndk.stamp
 build hiview_lite: phony ./libs/libhiview_lite.a
+build hm_package_storage_system: phony ./libs/libhm_package_storage_system.a
 build iothardware_ndk: phony obj/base/iot_hardware/frameworks/wifiiot_lite/src/iothardware_ndk.stamp
 build kal: phony ./libs/libkal.a
 build kv_store: phony obj/utils/native/lite/kv_store/kv_store.stamp
@@ -56,14 +57,13 @@ build trans_service: phony ./libs/libtrans_service.a
 build trans_service_ndk: phony obj/foundation/communication/services/softbus_lite/trans_service_ndk.stamp
 build utils_kv_store: phony ./libs/libutils_kv_store.a
 build wifi: phony obj/foundation/communication/frameworks/wifi_lite/wifi.stamp
-build wifiappdemo: phony ./libs/libwifiappdemo.a
 build wifiiot_sdk: phony obj/vendor/hisi/hi3861/hi3861/wifiiot_sdk.stamp
 build wifiservice: phony ./libs/libwifiservice.a
 build wifiservice_ndk: phony obj/vendor/hisi/hi3861/hi3861_adapter/hals/communication/wifi_lite/wifiservice/wifiservice_ndk.stamp
 build xdevice: phony obj/test/xdevice/xdevice.stamp
 build applications/sample/wifi-iot/app$:app: phony obj/applications/sample/wifi-iot/app/app.stamp
 build applications/sample/wifi-iot/app: phony obj/applications/sample/wifi-iot/app/app.stamp
-build applications/sample/wifi-iot/app/wuliandk/wifienv$:wifiappdemo: phony ./libs/libwifiappdemo.a
+build applications/sample/wifi-iot/app/hm_package_storage_system/main$:hm_package_storage_system: phony ./libs/libhm_package_storage_system.a
 build base/hiviewdfx/frameworks/hilog_lite/mini$:hilog_lite: phony ./libs/libhilog_lite.a
 build base/hiviewdfx/frameworks/hilog_lite/mini$:hilog_lite_ndk: phony obj/base/hiviewdfx/frameworks/hilog_lite/mini/hilog_lite_ndk.stamp
 build base/hiviewdfx/services/hiview_lite$:hiview_lite: phony ./libs/libhiview_lite.a
@@ -138,7 +138,7 @@ build vendor/huawei/wifi-iot/hals/utils/token$:hal_token_static: phony ./libs/li
 
 build all: phony $
     obj/applications/sample/wifi-iot/app/app.stamp $
-    ./libs/libwifiappdemo.a $
+    ./libs/libhm_package_storage_system.a $
     ./libs/libhilog_lite.a $
     obj/base/hiviewdfx/frameworks/hilog_lite/mini/hilog_lite_ndk.stamp $
     ./libs/libhiview_lite.a $
