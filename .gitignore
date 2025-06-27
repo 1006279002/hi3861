@@ -1,9 +1,15 @@
 # Ignore files and directories that should not be tracked by Git
-.vscode
+/.vscode
 
 /out
 
-/vendor
+/vendor/hisi/hi3861/hi3861/build
+
+/vendor/hisi/hi3861/hi3861/ohos
+
+/vendor/hisi/hi3861/hi3861/.sconsign.dblite
+
+/test/xdevice/dist
 
 
 
