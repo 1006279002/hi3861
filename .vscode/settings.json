@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "hi_partition_table.h": "c",
+        "hi_ver.h": "c",
+        "hi_cpu.h": "c",
+        "hi_crash.h": "c",
+        "app_main.h": "c",
+        "ohos_types.h": "c",
+        "wifiiot_gpio.h": "c",
+        "ohos_init.h": "c",
+        "stdlib.h": "c",
+        "unistd.h": "c",
+        "hi_gpio.h": "c"
+    }
+}

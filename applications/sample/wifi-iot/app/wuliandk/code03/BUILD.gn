@@ -1,0 +1,15 @@
+static_library("threaddemo"){
+    sources = [
+        # "taskthreaddemo.c",
+        # "key_s3_demo.c",
+        # "beeper_demo.c",
+        # "Keys3_beep_demo.c",
+        "keys3_beeper_music_demo.c",
+    ]
+    
+    include_dirs = [
+        "//utils/native/lite/include",
+        "//kernel/liteos_m/components/cmsis/2.0",
+        "//base/iot_hardware/interfaces/kits/wifiiot_lite",
+    ]
+}

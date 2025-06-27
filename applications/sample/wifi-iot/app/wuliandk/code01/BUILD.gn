@@ -1,0 +1,8 @@
+static_library("hellodemo") {
+  sources = [
+    "hellodemo.c",
+  ]
+  include_dirs = [
+    "//utils/native/lite/include",
+  ]
+}
