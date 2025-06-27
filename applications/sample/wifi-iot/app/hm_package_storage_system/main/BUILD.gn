@@ -1,4 +1,10 @@
+# 创建时间: 2025-06-27
+# author : CrazyApple
+
 static_library("hm_package_storage_system") {
+  # 源文件列表
+  # 这些文件包含了Wi-Fi连接、TCP客户端和OLED显示等功能的实现。
+  # 如果需要添加或修改功能，请在这里更新源文件列表。
   sources = [
     "aht20.c",
     "oled_ssd1306.c",
@@ -7,6 +13,9 @@ static_library("hm_package_storage_system") {
     "hm_package_storage_system.c",
   ]
 
+  # 头文件目录
+  # 这些目录包含了项目所需的头文件。
+  # 如果需要添加新的头文件目录，请在这里更新include_dirs。
   include_dirs = [
     "//utils/native/lite/include",
     "//kernel/liteos_m/components/cmsis/2.0",
