@@ -22,5 +22,6 @@ static_library("hm_package_storage_system") {
     "//base/iot_hardware/interfaces/kits/wifiiot_lite",
     "//vendor/hisi/hi3861/hi3861/third_party/lwip_sack/include",
     "//foundation/communication/interfaces/kits/wifi_lite/wifiservice",
+    "//applications/sample/wifi-iot/app/hm_package_storage_system/common",
   ]
 }

@@ -224,12 +224,6 @@ WifiErrorCode wifi_get_default_config(wifi_config_t *config)
         printf("Error: Config parameter is NULL\n");
         return ERROR_WIFI_INVALID_ARGS;
     }
-
-    // 在生产环境中，这些配置应该从以下位置获取：
-    // 1. 非易失性存储（NV存储）
-    // 2. 配置文件系统
-    // 3. 用户输入接口
-    // 4. 网络配置协议（如WPS）
     
     return wifi_set_config("Apple shop", "20031126Gao!", config);
 }
